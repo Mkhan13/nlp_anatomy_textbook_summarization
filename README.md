@@ -1,11 +1,11 @@
 # Natural Langage Processing: Anatomy Textbook Summarization
 ## Problem
-Medical textbooks are dense and terminology-heavy which can make it difficult for students to quickly understand and retain key information. Anatomy in particular requires detailed reading and repetition which can be time-consuming and overwhelming. This project uses natural language processing (NLP) to automatically summarize anatomy content into clear and concise summaries that are easier for students to review and understand.
+Medical textbooks are dense and terminology-heavy which can make it difficult for students to quickly understand and retain key information. Anatomy, which is considered one of the hardest classes in medical school, requires detailed reading and repetition which can be time-consuming and overwhelming. This project uses natural language processing (NLP) to automatically summarize anatomy content into clear and concise summaries that are easier for students to review and understand.
 
 ---
 
 ## Data Source
-- **[InfoBooks Anatomy Ebook Conversions](https://www.kaggle.com/datasets/evidence/infobooks-anatomy-ebook-conversions)**  
+**[InfoBooks Anatomy Ebook Conversions](https://www.kaggle.com/datasets/evidence/infobooks-anatomy-ebook-conversions)**  
 This dataset contains PDFs of the following anatomy textbooks:
   1) Anatomy & Physiology. Volume 1 of 3
   2) Anatomy & Physiology. Volume 2 of 3
@@ -56,23 +56,39 @@ This dataset contains PDFs of the following anatomy textbooks:
 ---
 
 ## Review of Relevant Previous Efforts and Literature  
+[This study](https://www.sciencedirect.com/science/article/pii/S0010482525001581) focuses on using NLP techniques to analyze electronic medical records. [This study](https://ieeexplore.ieee.org/document/9984491) uses NLP to summarize and simplify medical articles. [This collection](https://nlp.johnsnowlabs.com/medical_text_summarization) of live demos demonstrate how NLP can be used to summarize clinical texts.
 
+**My Contribution:**  
+While projects applying NLP to summarize medical texts have been conducted previously, my project focuses specifically on anatomy textbooks due to their especially difficult verbage.
 
 ---
 
 ## Model Evaluation Process & Metric Selection   
+- **Metrics:**  
+  - ROUGE
+  - BERTScore
+- **Data Splits:** Because this is a summarization task, the training data is 100% of the dataset 
 
+All three approaches (naive, classical ML, and deep learning) are trained and evaluated on the same split. The results are compared directly against the naive baseline to quantify performance improvements.
 
 ---
 
 ## Modeling Approach  
-
-
+1. **Naive Baseline:** Return the first few sentences of the passage as a summary
+2. **Classical ML Approach:**  Use TextRank to select key sentences from the passage
+3. **Deep Learning Approach:**  Train a BART model end-to-end to rephrase the content into comprehensive summaries
 
 ### Data Processing Pipeline  
-
+The raw dataset consists of anatomy textbook passages stored as text files. To prepare the data for modeling, the text is cleaned to remove headers, footers, page numbers, and any non-text elements. Then the dataset is converted to text embeddings and stored into a searchable index for retreival later. 
 
 ### Models Evaluated and Model Selected  
+- **Evaluated Models:**
+
+| Approach             | ROUGE | BERTScore | Notes |
+|----------------------|-------|-----------|-------|
+| **Naive Baseline**   |       |           |       |
+| **Classical ML**     |       |           |       |
+| **Deep Learning**    |       |           |       |
 
 
 - **Model Selected:** 
