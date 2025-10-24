@@ -58,7 +58,7 @@ Streamlit site can be found [here](LINK HERE)
 
 1. Clone the Repository  
 `git clone https://github.com/Mkhan13/nlp_anatomy_textbook_summarization.git`  
-`cd {FOLDER HERE}`
+`cd nlp_anatomy_textbook_summarization`
 
 3. Install Dependencies  
 `pip install -r requirements.txt`
