@@ -1,6 +1,6 @@
 # Natural Langage Processing: Mental Health Sentiment Analysis
 ## Problem
-Written text like journal entries or social media posts can reveal important information about a person's mental state. Early detection of mental health issues is the first step towards getting the necessary treatment and support. The goal of this project is to develop an AI model that can detect signs of mental health distress, like anxiety, depression, or stress, from text. 
+Social media posts can reveal important information about a person's mental state. Early detection of mental health issues is the first step towards getting the necessary treatment and support. The goal of this project is to develop an AI model that can detect signs of mental health distress, like anxiety, depression, or stress, from text. 
 
 ---
 
@@ -19,10 +19,10 @@ This dataset is valuable because it provides real world examples of people expre
 ---
 
 ## Review of Relevant Previous Efforts and Literature  
-
+There are several previous projects that focus on applying NLP to mental illness detection. This similar project focuses on comparing both traditonal deep NLP methods for early detection of mental health issues. 
 
 **My Contribution:**  
-
+My project is unique because of its focus on social media text posts as the data source
 
 ---
 
