@@ -51,6 +51,7 @@ The text data is cleaned and preprocessed by lowercasing all text, removing URLs
 The CSVs are saved under the following folder structure under `data/processed/`:
 ```
 data/processed/
+├── cleaned_data.csv
 ├── train.csv
 ├── val.csv
 └── test.csv
