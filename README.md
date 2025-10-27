@@ -13,7 +13,8 @@ This dataset is sourced from subreddits concerned with mental health based conve
   - 2 = Bipolar disorder  
   - 3 = Personality disorder  
   - 4 = Anxiety  
-
+  
+This dataset is valuable because it provides real world examples of people expressing emotions and struggles in their own words which allows the models to learn the words associated with mental health distress.
 
 ---
 
