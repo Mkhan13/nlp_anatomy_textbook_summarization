@@ -19,7 +19,7 @@ This dataset is valuable because it provides real world examples of people expre
 ---
 
 ## Review of Relevant Previous Efforts and Literature  
-There are several previous projects that focus on applying NLP to mental illness detection. This similar project focuses on comparing both traditonal deep NLP methods for early detection of mental health issues. 
+There are several previous projects that focus on applying NLP to mental illness detection. [This](https://pmc.ncbi.nlm.nih.gov/articles/PMC8993841/) similar project focuses on comparing both traditonal deep NLP methods for early detection of mental health issues. 
 
 **My Contribution:**  
 My project is unique because of its focus on social media text posts as the data source
@@ -28,17 +28,20 @@ My project is unique because of its focus on social media text posts as the data
 
 ## Model Evaluation Process & Metric Selection   
 - **Metrics:**  
-  - 
-- **Data Splits:**
+  - Accuracy  
+  - Precision, Recall
+  - F1-score  
+  - ROC AUC  
+- **Data Splits:** Stratified 80%/10%/10% split for train/validation/test 
 
-All three approaches (naive, classical ML, and deep learning) are trained and evaluated on the same split. The results are compared directly against the naive baseline to quantify performance improvements.
+All three approaches (naive, classical ML, and deep learning) are trained and evaluated on the same split. The results are compared directly against the naive baseline.
 
 ---
 
 ## Modeling Approach  
-1. **Naive Baseline:** 
-2. **Classical ML Approach:**  
-3. **Deep Learning Approach:**  
+1. **Naive Baseline:** Classify texts as expressing mental health distress if they contain predefined keywords
+2. **Classical ML Approach:**  Train a machine learning classifier on TF-IDF features of the text
+3. **Deep Learning Approach:**  Fine-tune a BERT transformer model to predict distress from the full text context.
 
 ### Data Processing Pipeline  
  
