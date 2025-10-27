@@ -1,10 +1,18 @@
 # Natural Langage Processing: Mental Health Sentiment Analysis
 ## Problem
-
+Written text like journal entries or social media posts can reveal important information about a person's mental state. Early detection of mental health issues is the first step towards getting the necessary treatment and support. The goal of this project is to develop an AI model that can detect signs of mental health distress, like anxiety, depression, or stress, from text. 
 
 ---
 
 ## Data Source
+[Reddit Mental Health Data](https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data)  
+  
+This dataset is sourced from subreddits concerned with mental health based conversations. The mental health concerns included in the dataset have the following mappings:  
+  - 0 = Stress  
+  - 1 = Depression
+  - 2 = Bipolar disorder  
+  - 3 = Personality disorder  
+  - 4 = Anxiety  
 
 
 ---
