@@ -44,16 +44,26 @@ All three approaches (naive, classical ML, and deep learning) are trained and ev
 3. **Deep Learning Approach:**  Fine-tune a BERT transformer model to predict distress from the full text context.
 
 ### Data Processing Pipeline  
- 
+The raw dataset is a CSV with columns text, title, and target, where target indicates the mental health condition (0 = Stress, 1 = Depression, 2 = Bipolar disorder, 3 = Personality disorder, 4 = Anxiety). To avoid data leakage and class imbalancem, the posts are split by random sampling into train (80%), validation (10%), and test (10%) sets.
+
+The text data is cleaned and preprocessed by lowercasing all text, removing URLs, special characters, extra whitespace, and stopwords. 
+
+The CSVs are saved under the following folder structure under `data/processed/`:
+```
+data/processed/
+├── train.csv
+├── val.csv
+└── test.csv
+```
 
 ### Models Evaluated and Model Selected  
 - **Evaluated Models:**
 
-| Approach             | ROUGE | BERTScore | Notes |
-|----------------------|-------|-----------|-------|
-| **Naive Baseline**   |       |           |       |
-| **Classical ML**     |       |           |       |
-| **Deep Learning**    |       |           |       |
+| Approach             | Accuracy | Precision | Recall | F1-score | ROC-AUC | Notes    |
+|----------------------|----------|------------------------|---------------------|-----------------------|---------|---------------------|
+| **Naive Baseline**   |    |                  |               |                  |     |     |
+| **Classical ML**     |       |                   |                 |                   |    |  |
+| **Deep Learning** |    |                  |              |                  |     |   |
 
 
 - **Model Selected:** 
