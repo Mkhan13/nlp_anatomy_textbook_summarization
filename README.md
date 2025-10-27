@@ -59,12 +59,13 @@ data/processed/
 
 ### Models Evaluated and Model Selected  
 - **Evaluated Models:**
+| Model           | Accuracy | Precision | Recall | F1-score | Notes |
+|-----------------|---------|-----------|--------|----------|-------|
+| Naive Baseline  | 0.3624  | 0.53      | 0.30   | 0.34     | Fails on classes with few or no keywords |
+| Classical ML    | 0.7215  | 0.73      | 0.72   | 0.72     | Significant improvement over naive baseline |
+| Deep Learning   | TBD     | TBD       | TBD    | TBD      |  |
 
-| Approach             | Accuracy | Precision | Recall | F1-score | ROC-AUC | Notes    |
-|----------------------|----------|------------------------|---------------------|-----------------------|---------|---------------------|
-| **Naive Baseline**   |    |                  |               |                  |     |     |
-| **Classical ML**     |       |                   |                 |                   |    |  |
-| **Deep Learning** |    |                  |              |                  |     |   |
+
 
 
 - **Model Selected:** 
