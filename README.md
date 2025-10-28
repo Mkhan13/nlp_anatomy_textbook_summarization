@@ -59,11 +59,12 @@ data/processed/
 ### Models Evaluated and Model Selected  
 - **Evaluated Models:**
 
-| Model           | Accuracy | Precision | Recall | F1-score | Notes                                      |
-|-----------------|----------|-----------|--------|----------|--------------------------------------------|
-| Naive Baseline  | 0.3624   | 0.53      | 0.30   | 0.34     | Fails on classes with few or no keywords   |
-| Classical ML    | 0.7215   | 0.73      | 0.72   | 0.72     | Significant improvement over naive baseline|
-| Deep Learning   | TBD      | TBD       | TBD    | TBD      | Placeholder for future results             |
+| Model           | Accuracy | Precision | Recall | F1-score | Notes |
+|-----------------|---------|-----------|--------|----------|-------|
+| Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords; slightly improved over previous run |
+| Classical ML    | 0.7215  | 0.73      | 0.72   | 0.72     | Significant improvement over naive baseline |
+| Deep Learning   | TBD     | TBD       | TBD    | TBD      | Fine-tuned BERT or other transformer-based model |
+
 
 
 
