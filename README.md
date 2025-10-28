@@ -41,8 +41,7 @@ All three approaches (naive, classical ML, and deep learning) are trained and ev
 ## Modeling Approach  
 1. **Naive Baseline:** Classify texts as expressing mental health distress if they contain predefined keywords
 2. **Classical ML Approach:**  Train a machine learning classifier on TF-IDF features of the text
-3. **Deep Learning Approach:**  Fine-tune a BERT transformer model to predict distress from the full text context.
-
+3. **Deep Learning Approach:**  Fine-tune a BERT transformer model
 ### Data Processing Pipeline  
 The raw dataset is a CSV with columns text, title, and target, where target indicates the mental health condition (0 = Stress, 1 = Depression, 2 = Bipolar disorder, 3 = Personality disorder, 4 = Anxiety). To avoid data leakage and class imbalancem, the posts are split by random sampling into train (80%), validation (10%), and test (10%) sets.
 
