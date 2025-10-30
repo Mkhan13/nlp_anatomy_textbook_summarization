@@ -62,7 +62,7 @@ data/processed/
 | Model           | Accuracy | Precision | Recall | F1-score | Notes |
 |-----------------|---------|-----------|--------|----------|-------|
 | Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords; slightly improved over previous run |
-| Classical ML    | 0.7215  | 0.73      | 0.72   | 0.72     | Significant improvement over naive baseline |
+| Classical ML    | 0.74  | 0.75      | 0.74   | 0.75     | Significant improvement over naive baseline |
 | Deep Learning   | TBD     | TBD       | TBD    | TBD      | Fine-tuned BERT or other transformer-based model |
 
 
