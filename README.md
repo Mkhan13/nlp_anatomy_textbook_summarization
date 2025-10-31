@@ -41,8 +41,7 @@ All three approaches (naive, classical ML, and deep learning) are trained and ev
 ## Modeling Approach  
 1. **Naive Baseline:** Classify texts as expressing mental health distress if they contain predefined keywords
 2. **Classical ML Approach:**  Train a machine learning classifier on TF-IDF features of the text
-3. **Deep Learning Approach:**  Fine-tune a BERT transformer model to predict distress from the full text context.
-
+3. **Deep Learning Approach:**  Fine-tune a BERT transformer model
 ### Data Processing Pipeline  
 The raw dataset is a CSV with columns text, title, and target, where target indicates the mental health condition (0 = Stress, 1 = Depression, 2 = Bipolar disorder, 3 = Personality disorder, 4 = Anxiety). To avoid data leakage and class imbalancem, the posts are split by random sampling into train (80%), validation (10%), and test (10%) sets.
 
@@ -60,11 +59,14 @@ data/processed/
 ### Models Evaluated and Model Selected  
 - **Evaluated Models:**
 
-| Approach             | Accuracy | Precision | Recall | F1-score | ROC-AUC | Notes    |
-|----------------------|----------|------------------------|---------------------|-----------------------|---------|---------------------|
-| **Naive Baseline**   |    |                  |               |                  |     |     |
-| **Classical ML**     |       |                   |                 |                   |    |  |
-| **Deep Learning** |    |                  |              |                  |     |   |
+| Model           | Accuracy | Precision | Recall | F1-score | Notes |
+|-----------------|---------|-----------|--------|----------|-------|
+| Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords; slightly improved over previous run |
+| Classical ML    | 0.74  | 0.75      | 0.74   | 0.75     | Significant improvement over naive baseline |
+| Deep Learning   | 0.77     | 0.78       | 0.77    | 0.77      | Most overall balanced model  |
+
+
+
 
 
 - **Model Selected:** 
