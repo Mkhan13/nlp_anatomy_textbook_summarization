@@ -62,18 +62,14 @@ data/processed/
 
 | Model           | Accuracy | Precision | Recall | F1-score | Notes |
 |-----------------|---------|-----------|--------|----------|-------|
-| Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords; slightly improved over previous run |
+| Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords|
 | Classical ML    | 0.74  | 0.75      | 0.74   | 0.75     | Significant improvement over naive baseline |
 | Deep Learning   | 0.77     | 0.78       | 0.77    | 0.77      | BERT, Most overall balanced model  |
-
-
-
-
 
 - **Model Selected:** Deep Learning
 
 ### Comparison to Naive Approach  
-
+The deep learning BERT model significantly outperforms the naive baseline. It improves the accuracy from 0.38 to 0.77. This improvement in accuracy shows that the BERT model is better at capturing the contextual meaning of the text compared to simple keyword matching.
 
 ---
 
