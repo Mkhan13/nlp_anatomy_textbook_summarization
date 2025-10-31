@@ -67,6 +67,7 @@ data/processed/
 | Deep Learning   | 0.77     | 0.78       | 0.77    | 0.77      | BERT, Most overall balanced model  |
 
 - **Model Selected:** Deep Learning
+- **Model Weights [here](https://huggingface.co/moosejuice13/nlp-mental-health-bert)**  
 
 ### Comparison to Naive Approach  
 The deep learning BERT model significantly outperforms the naive baseline. It improves the accuracy from 0.38 to 0.77. This improvement in accuracy shows that the BERT model is better at capturing the contextual meaning of the text compared to simple keyword matching.
