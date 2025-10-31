@@ -64,13 +64,13 @@ data/processed/
 |-----------------|---------|-----------|--------|----------|-------|
 | Naive Baseline  | 0.38    | 0.53      | 0.32   | 0.35     | Performs poorly on classes with few or no keywords; slightly improved over previous run |
 | Classical ML    | 0.74  | 0.75      | 0.74   | 0.75     | Significant improvement over naive baseline |
-| Deep Learning   | 0.77     | 0.78       | 0.77    | 0.77      | Most overall balanced model  |
+| Deep Learning   | 0.77     | 0.78       | 0.77    | 0.77      | BERT, Most overall balanced model  |
 
 
 
 
 
-- **Model Selected:** 
+- **Model Selected:** Deep Learning
 
 ### Comparison to Naive Approach  
 
