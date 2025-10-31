@@ -5,6 +5,16 @@ from transformers import BertTokenizer, BertForSequenceClassification
 MODEL_PATH = './models/bert_model'
 TOKENIZER_PATH = './models/bert_tokenizer'
 
+label_map = {
+    0: "Stress",
+    1: "Depression",
+    2: "Bipolar disorder",
+    3: "Personality disorder",
+    4: "Anxiety"
+}
+
+@st.cache_resource  # Cache the model so it isn’t reloaded on every interaction
+
 def load_model():
     tokenizer = BertTokenizer.from_pretrained(TOKENIZER_PATH)
     model = BertForSequenceClassification.from_pretrained(MODEL_PATH)
@@ -34,4 +44,4 @@ def run_frontend():
                 outputs = model(**inputs) # Get model outputs
                 pred = torch.argmax(outputs.logits, dim=1).item() # Get predicted class
 
-            st.success(f"Predicted Label: {pred}")
+            st.success(f"Predicted Category: {label_map.get(pred, 'Unknown')}")
