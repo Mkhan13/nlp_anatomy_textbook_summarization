@@ -83,13 +83,15 @@ Streamlit site can be found [here](https://nlp-mental-health-app-963698787646.us
 ---
 
 ## Results and Conclusions  
+The deep learning BERT model achieved an accuracy of 77% which outperformed both the naive baseline, which has an accuracy of 38% and the classical machine learning model, which has an accuracy of 74%. The model's ability to understand the contextual and semantic nuances in text allowed it to generalize better across different types of mental health expressions. This improvement demonstrates the transformers abilities to capture emotional cues that a simple keyword based search misses. 
 
+While the model is not perfect, it does have potential to function as a support tool to monitor or analyze mental health discussions online. 
 
 ---
 
 ## Ethics Statement  
 
-
+This project is intended for educational and research purposes only and should not be used to assess or diagnose mental health conditions. The model's outputs are not a professional diagnosis and should not replace professional care or clinical advice. Please seek medical attention if you are experiencing symptoms of a mental health condition. Any real-world application of this tool should undergo ethical review and validation to ensure accuracy, user safety, and data privacy.
 
 ---
 
