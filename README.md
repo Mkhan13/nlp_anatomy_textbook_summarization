@@ -51,9 +51,10 @@ The CSVs are saved under the following folder structure under `data/processed/`:
 ```
 data/processed/
 ├── cleaned_data.csv
-├── train.csv
-├── val.csv
-└── test.csv
+├── processed/
+├──── train.csv
+├──── val.csv
+└──── test.csv
 ```
 
 ### Models Evaluated and Model Selected  
