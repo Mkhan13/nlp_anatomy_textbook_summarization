@@ -1,0 +1,12 @@
+.venv/
+.env/
+data/
+models/
+results/
+.gitignore
+model_exploration.ipynb
+README.md
+scripts/preprocess.py
+scripts/model.py
+__pycache__/
+*.pyc
