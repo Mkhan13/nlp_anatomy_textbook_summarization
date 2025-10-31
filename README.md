@@ -96,8 +96,8 @@ Streamlit site can be found [here](https://nlp-mental-health-app-963698787646.us
 ## Instructions on How to Run the Code
 
 1. Clone the Repository  
-`git clone https://github.com/Mkhan13/nlp_anatomy_textbook_summarization.git`  
-`cd nlp_anatomy_textbook_summarization`
+`git clone https://github.com/Mkhan13/nlp_mental_health_sentiment_analysis.git`  
+`cd nlp_mental_health_sentiment_analysis`
 
 3. Install Dependencies  
 `pip install -r requirements.txt`
@@ -106,4 +106,4 @@ Streamlit site can be found [here](https://nlp-mental-health-app-963698787646.us
 `streamlit run main.py`  
 The app will open in your browser  
 
-6. {WHAT USER DOES TO APP} 
+6. Type or copy and paste text into the text box. Click predict to analyze the text sentiment.
