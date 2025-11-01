@@ -2,8 +2,8 @@ import streamlit as st
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 
-MODEL_PATH = './models/bert_model'
-TOKENIZER_PATH = './models/bert_tokenizer'
+MODEL_PATH = "moosejuice13/nlp-mental-health-bert"
+TOKENIZER_PATH = "moosejuice13/nlp-mental-health-bert"
 
 label_map = {
     0: "Stress",
