@@ -78,7 +78,7 @@ The deep learning BERT model significantly outperforms the naive baseline. It im
 
 <img width="1029" height="590" alt="Screenshot 2025-10-31 at 3 52 59 PM 1" src="https://github.com/user-attachments/assets/52e37b03-c007-4bc9-a1ed-99b57f2f39fd" />
 
-Video demo of the project can be found [here](LINK HERE)  
+Video demo of the project can be found [here](https://drive.google.com/file/d/1PnfSZxMuAPDfx_DPDCzTmzl8rY07m6AB/view?usp=sharing)
 Streamlit site can be found [here](https://nlp-mental-health-app-963698787646.us-central1.run.app/)
 
 ---
